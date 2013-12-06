@@ -20,7 +20,7 @@ body{
 /*mobile first CSS */
 
 section{
-	height:480px;
+	min-height:480px;
 }
 
 /*img{
@@ -31,12 +31,17 @@ section{
 }*/
 
 img{
-	-webkit-transition: -webkit-transform 0.5s ease-in;
-	transition: transform 0.5s ease-in;
+	-webkit-transition: -webkit-transform 0.3s ease-in;
+	transition: transform 0.3s ease-in;
 }
 
 header{
 	clear:both;
+}
+
+footer{
+	clear:both;
+	margin:1em;
 }
 
 .container{
@@ -54,7 +59,7 @@ header{
 	z-index:100;
 }
 
-.container.splash{
+.splash{
 	background: rgb(0,0,0); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(48,48,48,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(48,48,48,1))); /* Chrome,Safari4+ */
@@ -67,7 +72,7 @@ header{
 	background-color:black;
 }
 
-.container.group1{
+.group1{
 	background: #4096ee; /* Old browsers */
 	background: -moz-linear-gradient(top,  #4096ee 0%, #376dcc 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4096ee), color-stop(100%,#376dcc)); /* Chrome,Safari4+ */
@@ -79,7 +84,7 @@ header{
 	color:white;
 }
 
-.container.group2{
+.group2{
 	background: #7d7e7d; /* Old browsers */
 	background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
@@ -92,7 +97,7 @@ header{
 	color:white;
 }
 
-.container.group3{
+.group3{
 	background: rgb(246,248,249); /* Old browsers */
 	background: -moz-linear-gradient(-45deg,  rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(246,248,249,1)), color-stop(50%,rgba(229,235,238,1)), color-stop(51%,rgba(215,222,227,1)), color-stop(100%,rgba(245,247,249,1))); /* Chrome,Safari4+ */
@@ -103,12 +108,18 @@ header{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+
+
 .container h2{
 	font-size:3em;
 }
 
 .container h3{
-	padding:.1em 0 .1em;
+	/*padding:.5em 0 .5em;*/
+}
+
+.container h4{
+	padding:1em;
 }
 
 .container h2 sup{
@@ -117,14 +128,22 @@ header{
 	font-size: .15em;
 }
 
+.container p{
+	text-align:justify;
+}
+
+.container article{
+	padding:1em 2em 1em;
+}
+
 .container-anim{
-	width:18.75em;
+	max-width:18.75em;
 	margin:auto;
 }
 
 .container-anim-vert{
 	width:9.4em;
-	height:15em;
+	height:16em;
 	margin:-2em auto 2em;
 }
 
@@ -148,15 +167,16 @@ header{
 	/*margin-top:25%;*/
 }
 
-/*#ionsysSplash{
-	margin-top:-2em;
-	position:relative;
-}*/
+#medcoLogo img{
+	width:100%;
+}
 
-.splash #ionsysSplash img{
+.splash #ionsysSplash{
 	-webkit-transform:rotate(90deg);
 	transform:rotate(90deg);
 	z-index:20;
+	background:url(img-ionsys2.png) top left no-repeat;
+	background-size:100%;;
 }
 
 .group1 img:hover{
@@ -164,14 +184,21 @@ header{
 	transform: scale(1.25);
 }
 
-.group2 .container-anim{
+.group2 .container-anim img, .splash img{
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 2s linear;
+	transition: transform 2s linear;
 }
 
 .group2 .container-anim:hover img{
 	-webkit-transform:rotateY(180deg);
 	transform:rotateY(180deg);
+}
+
+.splash #ionsysSplash:hover img{
+	-webkit-transform:rotateY(360deg);
+	transform:rotateY(360deg);
 }
 
 .group3 img:hover{
@@ -219,7 +246,7 @@ header{
 
 }*/
 
-@media only screen and (min-width: 47.51em){
+@media only screen and (min-width: 60em){
 
 	section{
 		height:56.25em;
@@ -231,39 +258,113 @@ header{
 	}
 
 	#medcoLogo{
-		width:auto;
-		clear:both;
+		width:30em;
+		clear:both;	
 	}
 
 	.container{
-		padding-top:8em;
+		padding:6em 0 0;
+		margin:auto;
+		width:60em;
 	}
 
 	.container h2{
 		font-size:4em;
 	}
 
+	.container h3{
+		font-size:1.25em;
+	}
+
+	.container h4{
+		font-size:2em;
+		padding: 1em;
+	}
+
+	.container header{
+		display:inline-block;
+		padding:0 0 2em;
+		width:100%;
+	}
+
+	.container article{
+		vertical-align:top;
+		display:inline-block;
+		line-height:1.5em;
+		margin:0;
+		width:calc(49% - 4em);
+		height:25em;
+	}
+
+	/*.container #
+
 	.container-anim{
 		width:30em;
-	}
+	}*/
 
 	.container-anim-vert{
 		clear:both;
 		margin:auto;
 		width:15em;
 		height:30em;
+		margin-bottom:2em;
 	}
 
 	.container-anim img{
-		width:auto;
+		width:100%;
 	}
 
 	.splash #ionsysSplash{
 		position:relative;
+		background:none;
+		transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
 	}
 
 	.splash #ionsysSplash img{
 		transform:rotate(0deg);
 		-webkit-transform:rotate(0deg);
+	}
+
+	.ionsysFront, .ionsysBack{
+		/* Enable 3D transforms */
+		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+
+		/* We are using two separate divs for the front and back of the
+		   phone. This will hide the divs when they are flipped, so that the
+		   opposite side can be seen:  */
+
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+
+		width:295px;
+		height:500px;
+
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin: -250px 0 0 -150px;
+
+		background:url(img-ionsys-flip.png) no-repeat left center;
+
+		transition: 0.8s;
+	}
+
+	.ionsysBack{
+		transform:rotateY(180deg);
+		-webkit-transform:rotateY(180deg);
+
+		background-position:right center;
+	}
+
+	.container-anim-vert:hover .ionsysFront{
+		transform:rotateY(180deg);
+		-webkit-transform:rotateY(180deg);
+	}
+
+	.container-anim-vert:hover .ionsysBack{
+		transform:rotateY(360deg);
+		-webkit-transform:rotateY(360deg);
 	}
 }
