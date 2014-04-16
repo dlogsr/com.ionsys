@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"head",
+				"headerLogo"
+			],
+			[
+				"cont",
+				"container-anim-vert"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +19,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 48,
+				"buffer_size": 3177,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css-reset.css",
+			"settings":
+			{
+				"buffer_size": 1780,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,7 +35,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 8973,
 				"line_ending": "Windows"
 			}
 		},
@@ -27,7 +43,7 @@
 			"file": "script.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 488,
 				"line_ending": "Windows"
 			}
 		}
@@ -56,6 +72,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Ryan/Documents/GitHub/com.ionsys/style.css"
 	],
 	"find":
 	{
@@ -73,6 +90,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ionsyslogo",
+			"ionsyslogo4",
+			"headerLogoCircle",
+			"headerLogo",
+			"backheader",
+			"pageheader",
+			"frontheader",
+			"transition",
+			".container",
+			".splash",
+			"transition",
+			"container-anim-vert",
+			"container-anim",
+			"ionsyssplash",
+			"5em",
+			";*/\n",
+			"container-anim",
+			"line",
+			"anim-vert",
+			"header",
+			"h2",
+			"logo",
 			"color:",
 			"tab"
 		],
@@ -100,20 +139,21 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 48,
+						"buffer_size": 3177,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23,
-								23
+								625,
+								625
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -124,28 +164,30 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 1,
-					"file": "style.css",
+					"file": "css-reset.css",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1780,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1072,
+								1072
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -155,18 +197,45 @@
 				},
 				{
 					"buffer": 2,
-					"file": "script.js",
+					"file": "style.css",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 8973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1311,
+								1311
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 874.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "script.js",
+					"settings":
+					{
+						"buffer_size": 488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
 							]
 						],
 						"settings":
